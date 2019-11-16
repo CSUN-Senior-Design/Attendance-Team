@@ -1,0 +1,13 @@
+.navBar{
+    width: 100%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.navButton{
+    margin: auto;
+    background: none;
+    border: 0;
+    width: min-content;
+    color: #FFFFFF;
+}
