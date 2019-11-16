@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Attendance": {
+    "Attendance-Team": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Attendance",
+            "outputPath": "dist/Attendance-Team",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Attendance:build"
+            "browserTarget": "Attendance-Team:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Attendance:build:production"
+              "browserTarget": "Attendance-Team:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Attendance:build"
+            "browserTarget": "Attendance-Team:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Attendance:serve"
+            "devServerTarget": "Attendance-Team:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Attendance:serve:production"
+              "devServerTarget": "Attendance-Team:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Attendance"
+  "defaultProject": "Attendance-Team"
 }

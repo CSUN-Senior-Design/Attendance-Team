@@ -24,7 +24,7 @@ Professor page uses cards in a grid layout to list courses managed by a profesor
 
 A 3-column, indefinite-row grid containing *course-card* components.
 Ideally, this component takes a Course array interpolation and passes each element
-down to the *course-info* component.
+down to the *course-info* component. 
 
 #### course-card
 
