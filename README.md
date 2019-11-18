@@ -1,53 +1,27 @@
-# RB-Branch
+# Attendance
 
-## [task04] professor_page
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
-Professor page uses cards in a grid layout to list courses managed by a profesor.
+## Development server
 
-### Added the following:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-+ Components
-  + card-layout
-  + course-card
-  + course-info
-  + nav-bar
+## Code scaffolding
 
-+ Class Models
-  + Course
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-+ Assets
-  + notebook.png
+## Build
 
-### Components
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-#### card-layout
+## Running unit tests
 
-A 3-column, indefinite-row grid containing *course-card* components.
-Ideally, this component takes a Course array interpolation and passes each element
-down to the *course-info* component.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-#### course-card
+## Running end-to-end tests
 
-A 3-column, 3-row grid layout containing the course icon, *course-info* component, and
-a button to direct the user to the selected course's page.
-This component takes in a Course object interpolation and passes it down to the *course-info*
-component.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-#### course-info
+## Further help
 
-This component takes in a Course object and iterates through its mambers. It calls the *getDays()*
-and *getTimes()* functions to retrieve a string from the corresponding arrays.
-This component employs a 2-column, 3-row grid layout to organize its information.
-
-#### nav-bar
-
-Provides a home for the page name and its navigation buttons. It takes in a name string.
-
-### Class Models
-
-+ *Course* provides an object for storing and passing information about a course.
-+ The *course-info* component iterates through its members.
-
-### Assets
-
-+ *notebook.png* is a static icon for courses using colors from the CSUN color palette.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
