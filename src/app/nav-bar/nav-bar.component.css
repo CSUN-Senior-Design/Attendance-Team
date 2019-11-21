@@ -3,6 +3,7 @@
     border-radius: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    background-color: var(--csun-red);
 }
 .navButton{
     margin: auto;
@@ -10,4 +11,8 @@
     border: 0;
     width: min-content;
     color: #FFFFFF;
+}
+.menu{
+    position: relative;
+    display: inline-block;
 }

@@ -3,7 +3,7 @@
     grid-row: auto;
     width: fit-content;
     padding: 10px 25px;
-    background-color: #D8D2C4;
+    background-color: var(--cream);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
-    background-color: #D8D2C4;
+    background-color: var(--cream);
     column-gap: 10px;
 }
 
