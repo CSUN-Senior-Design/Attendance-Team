@@ -4,7 +4,6 @@ import { ProfessorSettingsPageComponent } from './professor-settings-page/profes
 import { AppComponent } from './app.component';
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
 
-
 const routes: Routes = [
   {path: '', component: AppComponent},
   {path: 'profMain', component: ProfessorMainPageComponent},

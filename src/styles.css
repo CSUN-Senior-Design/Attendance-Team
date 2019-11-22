@@ -28,5 +28,18 @@ html, body {
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: futura-pt, sans-serif;
+}
+.csunRed{
+    margin: 5px;
+    background-color: var(--csun-red);
+    color: #FFFFFF;
+}
+.goldenYellow{
+    margin: 5px;
+    background-color: var(--golden-yellow);
+    color: #000000;
+}
+.buttonIcon{
+    margin: 5px;
 }

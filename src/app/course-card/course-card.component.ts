@@ -8,8 +8,30 @@ import { Course } from '../models/course.model';
 })
 export class CourseCardComponent implements OnInit {
   @Input('course') course: Course;  
+  sampleCourse: Course;
 
-  constructor() { }
+  constructor() {
+    this.sampleCourse = {
+      name: 'COMP 424',
+      professor: 'Harjit Dhillon',
+      section: 14023,
+      room: 'JD 3510',
+      days: [
+        'Mo',
+        'We'
+      ],
+      times: [
+        '8:00a',
+        '9:15a'
+      ]
+    }
+  }
+  getDays(aCourse: Course){
+    return aCourse.days.join(' ');
+  }
+  getTimes(aCourse: Course){
+    return (aCourse.times.join(' - '));
+  }
 
   ngOnInit() {
   }
