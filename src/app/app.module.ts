@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseInfoComponent } from './course-info/course-info.component';
@@ -26,6 +27,8 @@ import {MatDividerModule} from '@angular/material/divider';
 
 
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
+import { CourseExpansionPanelComponent } from './course-expansion-panel/course-expansion-panel.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,12 +39,14 @@ import { ProfessorMainPageComponent } from './professor-main-page/professor-main
     CardLayoutComponent,
     ProfessorSettingsPageComponent,
     UserMenuComponent,
-    ProfessorMainPageComponent
+    ProfessorMainPageComponent,
+    CourseExpansionPanelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatMenuModule,
     MatButtonModule,
     MatCardModule,

@@ -1,170 +1,18 @@
 <app-nav-bar name="Professor Settings"></app-nav-bar>
 <mat-accordion>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>COMP 333</mat-panel-title>
-            <mat-panel-description>Section #15043</mat-panel-description>
-        </mat-expansion-panel-header>
-
-        <mat-form-field>
-            <mat-label>Additional wait-list slots</mat-label>
-            <mat-select>
-                <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-            </mat-select>
-        </mat-form-field>
-        <mat-divider style="padding:auto; margin:10px"></mat-divider>
-        <div>
-            <mat-slide-toggle>Send automated messages.</mat-slide-toggle><br>
-            <mat-checkbox>In danger of failing.</mat-checkbox>
-            <mat-form-field style="margin:10px">
-                <mat-label>Absences</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-form-field style="margin:10px">
-                <mat-label>Weeks</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <mat-divider style="padding:auto; margin:10px"></mat-divider>
-        <div>
-            <mat-slide-toggle>Before exams.</mat-slide-toggle><br>
-            <mat-form-field style="margin:10px">
-                <mat-label>Days</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <mat-divider style="padding:auto; margin:10px"></mat-divider>
-        <div>
-            <mat-slide-toggle>Enable check-in timeout.</mat-slide-toggle><br>
-            <mat-form-field style="margin:10px">
-                <mat-label>Minutes</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-checkbox style="margin:10px">After class begins.</mat-checkbox>
-            <mat-checkbox style="margin:10px">After class ends.</mat-checkbox>
-        </div>
-    </mat-expansion-panel>
-    <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>COMP 585</mat-panel-title>
-                <mat-panel-description>Section #21330</mat-panel-description>
-            </mat-expansion-panel-header>
-    
-            <mat-form-field>
-                <mat-label>Additional wait-list slots</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-divider style="padding:auto; margin:10px"></mat-divider>
-            <div>
-                <mat-slide-toggle>Send automated messages.</mat-slide-toggle><br>
-                <mat-checkbox>In danger of failing.</mat-checkbox>
-                <mat-form-field style="margin:10px">
-                    <mat-label>Absences</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <mat-form-field style="margin:10px">
-                    <mat-label>Weeks</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <mat-divider style="padding:auto; margin:10px"></mat-divider>
-            <div>
-                <mat-slide-toggle>Before exams.</mat-slide-toggle><br>
-                <mat-form-field style="margin:10px">
-                    <mat-label>Days</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-            <mat-divider style="padding:auto; margin:10px"></mat-divider>
-            <div>
-                <mat-slide-toggle>Enable check-in timeout.</mat-slide-toggle><br>
-                <mat-form-field style="margin:10px">
-                    <mat-label>Minutes</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <mat-checkbox style="margin:10px">After class begins.</mat-checkbox>
-                <mat-checkbox style="margin:10px">After class ends.</mat-checkbox>
-            </div>
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>COMP 490</mat-panel-title>
-                    <mat-panel-description>Section #14001</mat-panel-description>
-                </mat-expansion-panel-header>
-        
-                <mat-form-field>
-                    <mat-label>Additional wait-list slots</mat-label>
-                    <mat-select>
-                        <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                <mat-divider style="padding:auto; margin:10px"></mat-divider>
-                <div>
-                    <mat-slide-toggle>Send automated messages.</mat-slide-toggle><br>
-                    <mat-checkbox>In danger of failing.</mat-checkbox>
-                    <mat-form-field style="margin:10px">
-                        <mat-label>Absences</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field style="margin:10px">
-                        <mat-label>Weeks</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-                <mat-divider style="padding:auto; margin:10px"></mat-divider>
-                <div>
-                    <mat-slide-toggle>Before exams.</mat-slide-toggle><br>
-                    <mat-form-field style="margin:10px">
-                        <mat-label>Days</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-                <mat-divider style="padding:auto; margin:10px"></mat-divider>
-                <div>
-                    <mat-slide-toggle>Enable check-in timeout.</mat-slide-toggle><br>
-                    <mat-form-field style="margin:10px">
-                        <mat-label>Minutes</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let num of numbers" [value]="num">{{numbers[num]}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-checkbox style="margin:10px">After class begins.</mat-checkbox>
-                    <mat-checkbox style="margin:10px">After class ends.</mat-checkbox>
-                </div>
-            </mat-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 585" tempSecNum="11423"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 429" tempSecNum="11543"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 424" tempSecNum="32130"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 333" tempSecNum="24123"></app-course-expansion-panel>
 </mat-accordion>
 
 <div>
-    <button mat-raised-button style="margin:10px" routerLink="/profMain">
-        <mat-icon>save</mat-icon>
-        Save
+    <button mat-raised-button style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;" routerLink="/profMain">
+        <mat-label for="saveButton">Save</mat-label>
+        <mat-icon id="saveButton" style="margin: 5px;">save</mat-icon>
     </button>
-    <button mat-raised-button style="margin:10px" routerLink="/profMain">
-        <mat-icon>cancel</mat-icon>
-        Discard
+    <button mat-raised-button style="margin:5px" routerLink="/profMain">
+        <mat-label for="cancelButton">Cancel</mat-label>
+        <mat-icon id="cancelButton" style="margin: 5px;">cancel</mat-icon>
     </button>
 </div>

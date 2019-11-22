@@ -8,17 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProfessorSettingsPageComponent implements OnInit {
 
   numbers: number[];
-  constructor() {
-    this.numbers = new Array(16);
-    this.initializeNumbers(this.numbers.length);
-  }
-  initializeNumbers(max: number){
-    var i = 0;
-    while(i < max){
-      this.numbers[i] = i;
-      i++;
-    }
-  }
+  constructor() { }
+
   ngOnInit() { }
 
 }
