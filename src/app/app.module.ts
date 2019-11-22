@@ -13,13 +13,14 @@ import { UserMenuComponent } from './user-menu/user-menu.component';
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
-  MatGridListModule
+  MatGridListModule, MatToolbarModule
 } from '@angular/material';
 
 import { Course } from 'src/app/models/course.model';
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
 import { CourseExpansionPanelComponent } from './course-expansion-panel/course-expansion-panel.component';
 import { FormsModule } from '@angular/forms';
+import { ProfessorMessagesPageComponent } from './professor-messages-page/professor-messages-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     ProfessorSettingsPageComponent,
     UserMenuComponent,
     ProfessorMainPageComponent,
-    CourseExpansionPanelComponent
+    CourseExpansionPanelComponent,
+    ProfessorMessagesPageComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +46,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatExpansionModule,
     MatSlideToggleModule,
+    MatToolbarModule,
     MatFormFieldModule,
     MatSelectModule,
     MatIconModule,

@@ -30,16 +30,19 @@ body {
     margin: 0;
     font-family: futura-pt, sans-serif;
 }
-.csunRed{
+
+.csunRed {
     margin: 5px;
     background-color: var(--csun-red);
     color: #FFFFFF;
 }
-.goldenYellow{
+
+.goldenYellow {
     margin: 5px;
     background-color: var(--golden-yellow);
     color: #000000;
 }
-.buttonIcon{
+
+.buttonIcon {
     margin: 5px;
 }

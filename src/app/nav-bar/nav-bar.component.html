@@ -1,10 +1,12 @@
-<div class="navBar">
-    <button class="material-icons navButton" title="User Settings" [matMenuTriggerFor]="menu">perm_identity</button>
-    <button class="material-icons navButton" title="Courses">list</button>
-    <h1>{{name}}</h1>
-    <button class="material-icons navButton" title="Location">my_location</button>
-    <button class="material-icons navButton" title="Messages">mail_outline</button>
+<mat-toolbar style="background-color:var(--csun-red);color: #FFFFFF; border-radius: 5px;">
+        <button class="material-icons navButton" title="User Settings" [matMenuTriggerFor]="menu">perm_identity</button>
+        <button class="material-icons navButton" title="Courses" routerLink="/profMain">grid_on</button>
+        <h1>{{name}}</h1>
+        <button class="material-icons navButton" title="Location">my_location</button>
+        <button class="material-icons navButton" title="Messages" routerLink="/profMessages">mail_outline</button>
+</mat-toolbar>
 
+<div class="userMenu">
     <mat-menu #menu="matMenu" class="menu">
         <app-user-menu></app-user-menu>
     </mat-menu>
