@@ -13,10 +13,9 @@ import { UserMenuComponent } from './user-menu/user-menu.component';
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
-  MatGridListModule, MatToolbarModule, MatTabsModule
+  MatGridListModule, MatToolbarModule, MatTabsModule, MatChipsModule
 } from '@angular/material';
 
-import { Course } from 'src/app/models/course.model';
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
 import { CourseExpansionPanelComponent } from './course-expansion-panel/course-expansion-panel.component';
 import { FormsModule } from '@angular/forms';
@@ -58,7 +57,8 @@ import { ExamMessageComponent } from './exam-message/exam-message.component';
     MatSelectModule,
     MatIconModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

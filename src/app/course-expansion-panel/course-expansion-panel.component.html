@@ -6,7 +6,7 @@
     <form>
         <div>
             <mat-slide-toggle ngModel name="addWaitList" #addWaitList="ngModel">
-                Allow additional wait-list seats.
+                <p>Allow additional wait-list seats.</p>
             </mat-slide-toggle>
             <div *ngIf="addWaitList.value">
                 <mat-form-field>
@@ -23,7 +23,7 @@
 
         <div>
             <mat-slide-toggle ngModel name="autoMessages" #autoMessages="ngModel">
-                Enable automated messages.
+                <p>Enable automated messages.</p>
             </mat-slide-toggle>
             <div *ngIf="autoMessages.value">
                 <mat-form-field>
@@ -40,7 +40,7 @@
 
         <div>
             <mat-slide-toggle ngModel name="timeOutWindow" #timeOutWindow="ngModel">
-                Enable check-in timeout.
+                <p>Enable check-in timeout.</p>
             </mat-slide-toggle>
             <div *ngIf="timeOutWindow.value">
                 <mat-form-field>
