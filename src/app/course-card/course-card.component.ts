@@ -7,30 +7,14 @@ import { Course } from '../models/course.model';
   styleUrls: ['./course-card.component.css']
 })
 export class CourseCardComponent implements OnInit {
-  @Input('course') course: Course;  
-  sampleCourse: Course;
+  @Input('course') course: Course;
 
-  constructor() {
-    this.sampleCourse = {
-      name: 'COMP 424',
-      professor: 'Harjit Dhillon',
-      section: 14023,
-      room: 'JD 3510',
-      days: [
-        'Mo',
-        'We'
-      ],
-      times: [
-        '8:00a',
-        '9:15a'
-      ]
-    }
+  constructor() { }
+  getDays() {
+    return this.course.days.join(' ');
   }
-  getDays(aCourse: Course){
-    return aCourse.days.join(' ');
-  }
-  getTimes(aCourse: Course){
-    return (aCourse.times.join(' - '));
+  getTimes() {
+    return (this.course.times.join(' - '));
   }
 
   ngOnInit() {

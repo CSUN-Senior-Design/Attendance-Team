@@ -1,16 +1,16 @@
 <mat-card>
         <mat-card-title-group>
                 <img mat-card-sm-image src="../assets/notebook.png">
-                <mat-card-title>{{sampleCourse.name}}</mat-card-title>
+                <mat-card-title>{{course.name}}</mat-card-title>
                 <mat-card-subtitle>
-                        <p>Section #{{sampleCourse.section}}</p>
-                        <p>{{getDays(sampleCourse)}}: {{getTimes(sampleCourse)}}</p>
+                        <p>Section #{{course.section}}</p>
+                        <p>{{getDays()}}: {{getTimes()}}</p>
                 </mat-card-subtitle>
         </mat-card-title-group>
         <mat-card-content>
                 <div>
                         <p class="bold">Comp. Systems Security:</p>
-                        <p>{{sampleCourse.professor}}</p>
+                        <p>{{course.professor}}</p>
                 </div>
                 <div>
                         <mat-card-actions align="end">

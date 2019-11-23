@@ -9,7 +9,7 @@
 }
 .titleGrid{
     display: grid;
-    grid-template-columns: min-content auto auto;
+    grid-template-columns: min-content auto auto auto;
     background-color: inherit;
     margin-bottom: 10px;
 }
@@ -17,10 +17,11 @@
     align-self: end;
     font-size: 1em;
 }
-.studentEmail{
-    font-size: 1em;
-    font-weight: 200;
-    color: var(--dark-red);
+.studentEmail {
+    align-self: end;
+    justify-self: center;
+}
+.messageDate {
     align-self: end;
     justify-self: end;
 }
@@ -28,10 +29,6 @@
     margin-right: 10px;
     align-self: center;
     justify-self: start;
-}
-.absentMessage{
-    color: #FFFFFF;
-    background-color: var(--golden-yellow);
 }
 .examMessage{
     color: #FFFFFF;

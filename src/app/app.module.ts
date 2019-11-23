@@ -13,7 +13,7 @@ import { UserMenuComponent } from './user-menu/user-menu.component';
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
-  MatGridListModule, MatToolbarModule
+  MatGridListModule, MatToolbarModule, MatTabsModule
 } from '@angular/material';
 
 import { Course } from 'src/app/models/course.model';
@@ -21,6 +21,9 @@ import { ProfessorMainPageComponent } from './professor-main-page/professor-main
 import { CourseExpansionPanelComponent } from './course-expansion-panel/course-expansion-panel.component';
 import { FormsModule } from '@angular/forms';
 import { ProfessorMessagesPageComponent } from './professor-messages-page/professor-messages-page.component';
+import { MessagesTabComponent } from './messages-tab/messages-tab.component';
+import { AbsentMessageComponent } from './absent-message/absent-message.component';
+import { ExamMessageComponent } from './exam-message/exam-message.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ProfessorMessagesPageComponent } from './professor-messages-page/profes
     UserMenuComponent,
     ProfessorMainPageComponent,
     CourseExpansionPanelComponent,
-    ProfessorMessagesPageComponent
+    ProfessorMessagesPageComponent,
+    MessagesTabComponent,
+    AbsentMessageComponent,
+    ExamMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import { ProfessorMessagesPageComponent } from './professor-messages-page/profes
     BrowserAnimationsModule,
     FormsModule,
     MatMenuModule,
+    MatTabsModule,
     MatButtonModule,
     MatCardModule,
     MatCheckboxModule,

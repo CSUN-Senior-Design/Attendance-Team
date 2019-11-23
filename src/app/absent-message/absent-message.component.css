@@ -1,4 +1,4 @@
-.gridLayout{
+.gridLayout {
     padding: 5px;
     display: grid;
     grid-template-columns: auto;
@@ -7,37 +7,41 @@
     row-gap: 20px;
     margin: auto;
 }
-.titleGrid{
+
+.titleGrid {
     display: grid;
-    grid-template-columns: min-content auto auto;
+    grid-template-columns: min-content auto auto auto;
     background-color: inherit;
     margin-bottom: 10px;
 }
-.studentName{
+
+.studentName {
     align-self: end;
     font-size: 1em;
 }
-.studentEmail{
-    font-size: 1em;
-    font-weight: 200;
-    color: var(--dark-red);
+
+.studentEmail {
+    align-self: end;
+    justify-self: center;
+}
+
+.messageDate {
     align-self: end;
     justify-self: end;
 }
-.messageTypeIcon{
+
+.messageTypeIcon {
     margin-right: 10px;
     align-self: center;
     justify-self: start;
 }
-.absentMessage{
+
+.absentMessage {
     color: #FFFFFF;
     background-color: var(--golden-yellow);
 }
-.examMessage{
-    color: #FFFFFF;
-    background-color: var(--csun-red);
-}
-mat-card{
+
+mat-card {
     background-color: #FFFFFF;
     padding: 10px;
     border-left: 2px solid var(--csun-red);
