@@ -38,7 +38,7 @@
 
 .absentMessage {
     color: #FFFFFF;
-    background-color: var(--golden-yellow);
+    background-color: var(--csun-red);
 }
 
 mat-card {

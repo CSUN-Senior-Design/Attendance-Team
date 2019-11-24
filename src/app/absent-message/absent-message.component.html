@@ -1,7 +1,7 @@
 <div class="gridLayout">
     <mat-card>
         <mat-card-title class="titleGrid">
-            <mat-icon class="material-icons messageTypeIcon absentMessage">call_made</mat-icon>
+            <mat-icon class="material-icons messageTypeIcon absentMessage">priority_high</mat-icon>
             <div class="studentName">First Lastname</div>
             <div class="studentEmail">first.lastname@my.csun.edu</div>
             <div class="messageDate">09/28/2019</div>
@@ -10,5 +10,17 @@
         <mat-card-content>
             You have missed 3 classes. Additional text.
         </mat-card-content>
+        <mat-card-actions align="end">
+            <div>
+                <button mat-raised-button style="margin:5px; background-color: var(--golden-yellow);">
+                    <mat-label for="archiveButton">Archive</mat-label>
+                    <mat-icon id="archiveButton" style="margin: 5px;">archive</mat-icon>
+                </button>
+                <button mat-raised-button style="margin:5px; color: #FFFFFF; background-color: var(--csun-red);">
+                    <mat-label for="deleteButton">Delete</mat-label>
+                    <mat-icon id="deleteButton" style="margin: 5px;">delete</mat-icon>
+                </button>
+            </div>
+        </mat-card-actions>
     </mat-card>
 </div>

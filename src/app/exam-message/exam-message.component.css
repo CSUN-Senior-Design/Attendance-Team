@@ -32,7 +32,7 @@
 }
 .examMessage{
     color: #FFFFFF;
-    background-color: var(--csun-red);
+    background-color: var(--golden-yellow);
 }
 mat-card{
     background-color: #FFFFFF;
