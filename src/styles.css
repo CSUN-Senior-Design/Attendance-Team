@@ -1,7 +1,51 @@
-html *{
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html * {
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    --csun-red: #D22030;
+    --golden-yellow: #FDBF56;
+    --scarlet: #E74A37;
+    --cream: #D8D2C4;
+    --cool-gray: #A9A8A9;
+    --light-gray: #BEC6C3;
+    --azure: #2CA5DA;
+    --iris: #5B4C93;
+    --periwinkle: #92A1CD;
+    --green: #47B361;
+    --blue: #086B9E;
+    --dark-red: #850711;
 }
-h1{
+
+h1 {
+    font-size: 1.5em;
+    font-family: futura-pt, sans-serif;
     text-align: center;
+    color: #FFFFFF;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: futura-pt, sans-serif;
+}
+
+.csunRed {
+    margin: 5px;
+    background-color: var(--csun-red);
+    color: #FFFFFF;
+}
+
+.goldenYellow {
+    margin: 5px;
+    background-color: var(--golden-yellow);
+    color: #000000;
+}
+
+.buttonIcon {
+    margin: 5px;
 }

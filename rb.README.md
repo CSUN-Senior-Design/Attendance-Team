@@ -51,3 +51,30 @@ Provides a home for the page name and its navigation buttons. It takes in a name
 ### Assets
 
 + *notebook.png* is a static icon for courses using colors from the CSUN color palette.
+
+
+### Other Comments
+  + TODO:
+    + Make navbutton components that take an icon and a route (this should make back-navigation easier)
+    + Figure out how to store user settings in JSON file
+
+#### Accessing default fonts:
+    Futura PT Book
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    Futura PT Book Oblique
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+    Futura PT Bold
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    Futura PT Bold Oblique
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: italic;
