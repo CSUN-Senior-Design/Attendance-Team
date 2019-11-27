@@ -1,6 +1,7 @@
 # Attendance
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+In order to run remember to use the command npm install first to install node_module files then npm start.
 
 ## Development server
 
