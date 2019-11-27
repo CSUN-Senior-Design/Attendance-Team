@@ -7,9 +7,15 @@ import { Course } from '../models/course.model';
   styleUrls: ['./course-card.component.css']
 })
 export class CourseCardComponent implements OnInit {
-  @Input('course') course: Course;  
+  @Input('course') course: Course;
 
   constructor() { }
+  getDays() {
+    return this.course.days.join(' ');
+  }
+  getTimes() {
+    return (this.course.times.join(' - '));
+  }
 
   ngOnInit() {
   }

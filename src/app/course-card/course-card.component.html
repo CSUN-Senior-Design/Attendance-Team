@@ -1,5 +1,32 @@
-<div class="courseCard cardGrid">
-        <img src="../assets/notebook.png" alt="notebook.png" style="height: 100%;">
-        <app-course-info [course]="course"></app-course-info>
-        <button class="material-icons cardButton">chevron_right</button>
-</div>
+<mat-card>
+        <mat-card-title-group>
+                <img mat-card-sm-image src="../assets/notebook.png">
+                <mat-card-title>{{course.name}}</mat-card-title>
+                <mat-card-subtitle>
+                        <p>Section #{{course.section}}</p>
+                        <p>{{getDays()}}: {{getTimes()}}</p>
+                </mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content>
+                <div>
+                        <p class="bold">Comp. Systems Security:</p>
+                        <p>{{course.professor}}</p>
+                </div>
+                <div>
+                        <mat-card-actions align="end">
+                                <button mat-raised-button
+                                        class="csunRed"
+                                        routerLink="/profCourse">
+                                        <mat-label for="viewCourse">View Course</mat-label>
+                                        <mat-icon id="viewCourse" class="buttonIcon">info</mat-icon>
+                                </button>
+                                <button mat-raised-button
+                                        class="goldenYellow"
+                                        routerLink="/profMessages">
+                                        <mat-label for="viewMessages">Messages</mat-label>
+                                        <mat-icon id="viewMessages" class="buttonIcon">mail_outline</mat-icon>
+                                </button>
+                        </mat-card-actions>
+                </div>
+        </mat-card-content>
+</mat-card>

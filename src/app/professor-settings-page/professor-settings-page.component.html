@@ -1,0 +1,18 @@
+<app-nav-bar name="Professor Settings"></app-nav-bar>
+<mat-accordion>
+    <app-course-expansion-panel tempName="COMP 585" tempSecNum="11423"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 429" tempSecNum="11543"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 424" tempSecNum="32130"></app-course-expansion-panel>
+    <app-course-expansion-panel tempName="COMP 333" tempSecNum="24123"></app-course-expansion-panel>
+</mat-accordion>
+
+<div>
+    <button mat-raised-button style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;" routerLink="/profMain">
+        <mat-label for="saveButton">Save</mat-label>
+        <mat-icon id="saveButton" style="margin: 5px;">save_alt</mat-icon>
+    </button>
+    <button mat-raised-button style="margin:5px" routerLink="/profMain">
+        <mat-label for="cancelButton">Cancel</mat-label>
+        <mat-icon id="cancelButton" style="margin: 5px;">cancel</mat-icon>
+    </button>
+</div>

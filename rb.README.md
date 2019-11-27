@@ -1,53 +1,49 @@
 # RB-Branch
 
-## [task04] professor_page
+**Last update 11/25/2019**
 
-Professor page uses cards in a grid layout to list courses managed by a profesor.
+Branch implements three main features:
 
-### Added the following:
+### Professor Courses Page
 
-+ Components
-  + card-layout
-  + course-card
-  + course-info
-  + nav-bar
+**URL: '.../profMain':** Displays a grid of courses, each containing links to the corresponding *coursePage* and *messages* page.
 
-+ Class Models
-  + Course
+### Professor Messages Page
 
-+ Assets
-  + notebook.png
+**URL: '.../profMessages:'** Displays a set of tabs corresponding to different courses. Each tab contains a list of automated messages that have been sent, each containing links to perform *archive* and *delete* actions.
+There are two types of messages: Announcements and Warnings; each with a corresponding icon and color.
+  + Red indicates a warning. It is a message sent after a student has missed a number of classes.
+  + Yellow indicates an announcement. It serves to remind students of exams and other important class events. 
 
-### Components
+### Professor Settings Page
 
-#### card-layout
+**URL: '.../profSettings:'** Displays an accordion-style list of courses. Each course may be expanded to reveal three toggles that affect the following parameters; each toggle has a set of additional child options which are hidden whenever the toggle is disabled.
+There are two buttons for performing *save* and *cancel* actions.
 
-A 3-column, indefinite-row grid containing *course-card* components.
-Ideally, this component takes a Course array interpolation and passes each element
-down to the *course-info* component. 
+### Other Comments
+  + TODO:
+    + Need to figure out how user settings will be stored.
+    + Card components should be turned into a module that can be used by any other module in the project.
+    + Theme colors are defined in *styles.css* based on CSUN color specifications.
+    + Branch imports some fonts and icons from online resources. See *index.html* for references.
 
-#### course-card
+#### Accessing fonts:
+    Futura PT Book
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
-A 3-column, 3-row grid layout containing the course icon, *course-info* component, and
-a button to direct the user to the selected course's page.
-This component takes in a Course object interpolation and passes it down to the *course-info*
-component.
+    Futura PT Book Oblique
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: italic;
 
-#### course-info
+    Futura PT Bold
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
-This component takes in a Course object and iterates through its mambers. It calls the *getDays()*
-and *getTimes()* functions to retrieve a string from the corresponding arrays.
-This component employs a 2-column, 3-row grid layout to organize its information.
-
-#### nav-bar
-
-Provides a home for the page name and its navigation buttons. It takes in a name string.
-
-### Class Models
-
-+ *Course* provides an object for storing and passing information about a course.
-+ The *course-info* component iterates through its members.
-
-### Assets
-
-+ *notebook.png* is a static icon for courses using colors from the CSUN color palette.
+    Futura PT Bold Oblique
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: italic;

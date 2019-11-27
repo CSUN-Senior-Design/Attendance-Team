@@ -7,11 +7,9 @@ import { Course } from '../models/course.model';
   styleUrls: ['./card-layout.component.css']
 })
 export class CardLayoutComponent implements OnInit {
-  @Input('list') list: any;
+  @Input('list') list: Course;
 
   constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

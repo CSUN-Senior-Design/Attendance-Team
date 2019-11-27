@@ -1,7 +1,7 @@
 .gridLayout{
     padding: 20px;
     display: grid;
-    width: fit-content;
+    
     grid-template-columns: auto auto;
     background-color: inherit;
     column-gap: 20px;
