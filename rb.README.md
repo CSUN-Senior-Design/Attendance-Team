@@ -1,31 +1,37 @@
 # RB-Branch
 
-**Last update 11/25/2019**
+**Last update 11/28/2019**
 
-Branch implements three main features:
++ Branch updates *profMain*, *profMessages*, and *profSettings*.
++ Adds dynamic navbar heading.
++ Adds TestingData service.
++ Adds Angular Model for Messages.
++ Streamlines components.
 
-### Professor Courses Page
+## Updated pages
 
-**URL: '.../profMain':** Displays a grid of courses, each containing links to the corresponding *coursePage* and *messages* page.
+Layout has been improved. Content does not disappear or overlap when window narrows.
+Card components use a uniform styling file located in the **src/styles** folder.
+Grid layouts have been replaced by a vertical list of cards.
+Modified colors in prebuilt theme.
 
-### Professor Messages Page
+## Navbar heading
 
-**URL: '.../profMessages:'** Displays a set of tabs corresponding to different courses. Each tab contains a list of automated messages that have been sent, each containing links to perform *archive* and *delete* actions.
-There are two types of messages: Announcements and Warnings; each with a corresponding icon and color.
-  + Red indicates a warning. It is a message sent after a student has missed a number of classes.
-  + Yellow indicates an announcement. It serves to remind students of exams and other important class events. 
+Uses NavbarTitleService to set the Navbar title.
+Components must use this service to modify the name by injecting it into their constructor.
 
-### Professor Settings Page
+## TestingData service
 
-**URL: '.../profSettings:'** Displays an accordion-style list of courses. Each course may be expanded to reveal three toggles that affect the following parameters; each toggle has a set of additional child options which are hidden whenever the toggle is disabled.
-There are two buttons for performing *save* and *cancel* actions.
+Provides random generation of data.
+Should be replaced by a real data provider.
 
-### Other Comments
-  + TODO:
-    + Need to figure out how user settings will be stored.
-    + Card components should be turned into a module that can be used by any other module in the project.
-    + Theme colors are defined in *styles.css* based on CSUN color specifications.
-    + Branch imports some fonts and icons from online resources. See *index.html* for references.
+## messages.model.ts
+
+Provides an object model with fields to make message card generation simple.
+
+## Streamlined components
+
+Removed various redundant components.
 
 #### Accessing fonts:
     Futura PT Book

@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title-group titleGroup>
+        <mat-card-title>
+            <div class="cardTitleGrid">
+                <mat-icon class="material-icons messageIcon {{getIconClass()}}">{{getIcon()}}</mat-icon>
+                <span class="cardTitleMainText">{{message.recipientName}} &mdash; {{message.recipientAddress}}</span>
+            </div>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <p>{{message.type}}.</p>
+            <p>Sent {{message.timestamp.toLocaleDateString()}} at {{message.timestamp.toLocaleTimeString()}}</p>
+        </mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content content>
+        {{message.content}}
+    </mat-card-content>
+    <mat-divider [inset]="true"></mat-divider>
+    <mat-card-actions actions align="end">
+        <button mat-raised-button class="goldenYellow">
+            <mat-label for="archiveButton">Archive</mat-label>
+            <mat-icon id="archiveButton" style="margin: 5px;">archive</mat-icon>
+        </button>
+        <button mat-raised-button class="csunRed">
+            <mat-label for="deleteButton">Delete</mat-label>
+            <mat-icon id="deleteButton" style="margin: 5px;">delete</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>
