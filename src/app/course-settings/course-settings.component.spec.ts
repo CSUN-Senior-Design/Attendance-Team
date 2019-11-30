@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AbsentMessageComponent } from './absent-message.component';
+import { CourseSettingsComponent } from './course-settings.component';
 
-describe('AbsentMessageComponent', () => {
-  let component: AbsentMessageComponent;
-  let fixture: ComponentFixture<AbsentMessageComponent>;
+describe('CourseSettingsComponent', () => {
+  let component: CourseSettingsComponent;
+  let fixture: ComponentFixture<CourseSettingsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AbsentMessageComponent ]
+      declarations: [ CourseSettingsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AbsentMessageComponent);
+    fixture = TestBed.createComponent(CourseSettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
