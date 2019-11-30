@@ -23,11 +23,17 @@ import { ProfessorMessagesPageComponent } from './professor-messages-page/profes
 import { MessagesTabComponent } from './messages-tab/messages-tab.component';
 import { AbsentMessageComponent } from './absent-message/absent-message.component';
 import { ExamMessageComponent } from './exam-message/exam-message.component';
+import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
+import { CourseCardCourseViewProfComponent } from './course-card-course-view-prof/course-card-course-view-prof.component';
+import { ButtonCodeGeneratorComponent } from './button-code-generator/button-code-generator.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { ButtonProfSaveAttendanceComponent } from './button-prof-save-attendance/button-prof-save-attendance.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-
     NavBarComponent,
     CourseCardComponent,
     CardLayoutComponent,
@@ -38,14 +44,22 @@ import { ExamMessageComponent } from './exam-message/exam-message.component';
     ProfessorMessagesPageComponent,
     MessagesTabComponent,
     AbsentMessageComponent,
-    ExamMessageComponent
+    ExamMessageComponent,
+    ProfessorCourseViewPageComponent,
+    CourseCardCourseViewProfComponent,
+    ButtonCodeGeneratorComponent,
+    StudentListComponent,
+    StudentCardComponent,
+    ButtonProfSaveAttendanceComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatMenuModule,
+    MatMenuModule,  
     MatTabsModule,
     MatButtonModule,
     MatCardModule,

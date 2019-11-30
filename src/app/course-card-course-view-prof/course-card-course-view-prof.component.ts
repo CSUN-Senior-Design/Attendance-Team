@@ -8,7 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CourseCardCourseViewProfComponent implements OnInit {
   @Input('course') course: Course;
+<<<<<<< Updated upstream
   
+=======
+
+>>>>>>> Stashed changes
   constructor() { }
 
   getDays() {

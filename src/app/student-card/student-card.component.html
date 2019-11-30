@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title-group>
+        <mat-card-title>{{student.name}}</mat-card-title>
+        <mat-card-subtitle>Student ID: {{student.studentID}}</mat-card-subtitle>
+        <mat-card-content > 
+                <mat-slide-toggle  ngModel name="checkPresent" #checkPerson=ngModel (ngModel)="markAsChecked"  >
+                </mat-slide-toggle>
+            <p>{{student.attendance}}/25</p>
+        </mat-card-content >
+    </mat-card-title-group>
+    <mat-divider style="padding: auto; margin:10px"></mat-divider>
+</mat-card>

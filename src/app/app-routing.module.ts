@@ -1,3 +1,4 @@
+import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   {path: '', component: AppComponent},
   {path: 'profMain', component: ProfessorMainPageComponent},
   {path: 'profSettings', component: ProfessorSettingsPageComponent},
-  {path: 'profMessages', component: ProfessorMessagesPageComponent}
+  {path: 'profMessages', component: ProfessorMessagesPageComponent},
+  {path: 'profCourse', component:  ProfessorCourseViewPageComponent}
 ];
 
 @NgModule({
