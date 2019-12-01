@@ -32,6 +32,7 @@ import { ProfessorMessagesPageComponent } from './professor-messages-page/profes
 import { TestingDataService } from './services/testing-data.service';
 import { UserMenuComponent } from './user-menu/user-menu.component';
 import { CourseSettingsComponent } from './course-settings/course-settings.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { CourseSettingsComponent } from './course-settings/course-settings.compo
     ProfessorMainPageComponent,
     ProfessorMessagesPageComponent,
     MessageCardComponent,
-    CourseSettingsComponent
+    CourseSettingsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
