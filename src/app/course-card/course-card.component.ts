@@ -1,22 +1,20 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from '../models/course.model';
-import { TestingDataService } from '../services/testing-data.service';
 
 @Component({
   selector: 'app-course-card',
   templateUrl: './course-card.component.html',
-  styleUrls: ['../../styles/card.css']
+  styleUrls: ['./course-card.component.css']
 })
 export class CourseCardComponent implements OnInit {
   @Input('course') course: Course;
 
-  constructor(private testingService: TestingDataService) { }
-  
-  getCourseDays() {
-    return this.testingService.getDays(this.course);
+  constructor() { }
+  getDays() {
+    return this.course.days.join(' ');
   }
-  getCourseTimes() {
-    return this.testingService.getTimes(this.course);
+  getTimes() {
+    return (this.course.times.join(' - '));
   }
 
   ngOnInit() {

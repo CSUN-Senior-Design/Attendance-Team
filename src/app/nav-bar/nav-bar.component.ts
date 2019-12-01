@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NavbarTitleService } from '../services/navbar-title.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,12 +7,7 @@ import { NavbarTitleService } from '../services/navbar-title.service';
 })
 export class NavBarComponent implements OnInit {
   @Input('name') name: string;
-  
-  constructor(private navbarTitleService: NavbarTitleService) {
-    this.navbarTitleService.changeNavbarTitle.subscribe((text) => {
-      this.name = text;
-    });
-  }
+  constructor() { }
 
   ngOnInit() {
   }
