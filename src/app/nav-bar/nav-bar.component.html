@@ -1,19 +1,17 @@
-<mat-toolbar class="fixed-header" style="background-color:var(--csun-red);color: #FFFFFF; border-radius: 5px;">
-    <mat-toolbar-row>
-        <button mat-button class="navButton" title="User Settings" [matMenuTriggerFor]="menu">
-            <mat-icon>perm_identity</mat-icon>
-        </button>
-        <button mat-button class="navButton" title="Courses" routerLink="/profMain">
-            <mat-icon>reorder</mat-icon>
-        </button>
-        <h1>{{name}}</h1>
-        <button mat-button class="navButton" title="Location">
-            <mat-icon>my_location</mat-icon>
-        </button>
-        <button mat-button class="navButton" title="Messages" routerLink="/profMessages">
-            <mat-icon>mail_outline</mat-icon>
-        </button>
-    </mat-toolbar-row>
+<mat-toolbar style="background-color:var(--csun-red);color: #FFFFFF; border-radius: 5px;">
+    <button mat-button class="navButton" title="User Settings" [matMenuTriggerFor]="menu">
+        <mat-icon>perm_identity</mat-icon>
+    </button>
+    <button mat-button class="navButton" title="Courses" routerLink="/profMain">
+        <mat-icon>grid_on</mat-icon>
+    </button>
+    <h1>{{name}}</h1>
+    <button mat-button class="navButton" title="Location">
+        <mat-icon>my_location</mat-icon>
+    </button>
+    <button mat-button class="navButton" title="Messages" routerLink="/profMessages">
+        <mat-icon>mail_outline</mat-icon>
+    </button>
 </mat-toolbar>
 
 <div class="userMenu">

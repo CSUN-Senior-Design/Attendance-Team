@@ -1,0 +1,10 @@
+.codeGenerator{
+    grid-column: auto auto;
+    background-color: #D22030;
+    color: white ;
+    margin: 20px;
+}
+p.code{
+    font-size: large;
+    font-weight: 700;
+}

@@ -1,0 +1,14 @@
+mat-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-left: 2px solid var(--csun-red);   
+}
+p{
+    line-height: 10%;
+}
+p.bold{
+    font-weight: 700;
+    font-size: large;
+}

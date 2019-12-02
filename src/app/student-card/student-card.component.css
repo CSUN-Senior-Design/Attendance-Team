@@ -1,0 +1,10 @@
+mat-card{
+    background-color: whitesmoke;
+    padding: 5px;
+    border-left: 5px solid var(--csun-red);   
+    border-radius: 30px;
+    
+}
+p{
+    line-height: 10%;
+}

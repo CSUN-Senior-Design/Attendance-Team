@@ -1,0 +1,6 @@
+.saveAttendance{
+    grid-column: auto auto;
+    background-color: #D22030;
+    color: white ;
+    margin: 20px;
+}

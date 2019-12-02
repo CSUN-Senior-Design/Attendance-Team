@@ -1,0 +1,13 @@
+<div>   
+    <mat-card-actions align="middle">
+        <button mat-raised-button
+            class="codeGenerator"
+            (click)="generateACode()">
+            <mat-label>Generate a Code</mat-label>
+        </button>
+         <div >
+            <p class="code" *ngIf=isClicked>{{randomeCode}}</p>
+        </div>
+    </mat-card-actions>
+    <mat-divider style="padding:auto; margin:10px"></mat-divider>
+</div>
