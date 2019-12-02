@@ -2,15 +2,14 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Course } from '../models/course.model';
 
 @Component({
-  selector: 'app-course-card-view-prof',
-  templateUrl: './course-card-view-prof.component.html',
-  styleUrls: ['./course-card-view-prof.component.css']
+  selector: 'app-professor-course-card',
+  templateUrl: './professor-course-card.component.html',
+  styleUrls: ['./professor-course-card.component.css']
 })
-export class CourseCardViewProfComponent implements OnInit {
-
+export class ProfessorCourseCardComponent implements OnInit {
   @Input('course') course: Course;
-  constructor() { }
 
+  constructor() { }
   getDays() {
     return this.course.days.join(' ');
   }

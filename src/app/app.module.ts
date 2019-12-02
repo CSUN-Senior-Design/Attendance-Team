@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CourseCardComponent } from './course-card/course-card.component';
-import { CardLayoutComponent } from './card-layout/card-layout.component';
+import { ProfessorNavBarComponent } from './professor-nav-bar/professor-nav-bar.component';
+import { ProfessorCourseCardComponent } from './professor-course-card/professor-course-card.component';
+import { ProfessorCardLayoutComponent } from './professor-card-layout/professor-card-layout.component';
 import { ProfessorSettingsPageComponent } from './professor-settings-page/professor-settings-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserMenuComponent } from './user-menu/user-menu.component';
+import { ProfessorUserMenuComponent } from './professor-user-menu/professor-user-menu.component';
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
@@ -17,18 +17,18 @@ import {
 } from '@angular/material';
 
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
-import { CourseExpansionPanelComponent } from './course-expansion-panel/course-expansion-panel.component';
+import { ProfessorCourseExpansionPanelComponent } from './professor-course-expansion-panel/professor-course-expansion-panel.component';
 import { FormsModule } from '@angular/forms';
 import { ProfessorMessagesPageComponent } from './professor-messages-page/professor-messages-page.component';
 import { MessagesTabComponent } from './messages-tab/messages-tab.component';
 import { AbsentMessageComponent } from './absent-message/absent-message.component';
 import { ExamMessageComponent } from './exam-message/exam-message.component';
 import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
-import { CourseCardViewProfComponent } from './course-card-view-prof/course-card-view-prof.component';
+import { ProfessorCourseCardViewComponent } from './professor-course-card-view/professor-course-card-view.component';
 import { ButtonCodeGeneratorComponent } from './button-code-generator/button-code-generator.component';
 import { ButtonProfSaveAttendanceComponent } from './button-prof-save-attendance/button-prof-save-attendance.component';
-import { StudentCardComponent } from './student-card/student-card.component';
-import { StudentListComponent } from './student-list/student-list.component';
+import { ProfessorStudentCardComponent } from './professor-student-card/professor-student-card.component';
+import { ProfessorStudentListComponent } from './professot-student-list/professor-student-list.component';
 import { LoginComponent } from './login/login.component';
 import { StudentMainPageComponent} from './student-main-page/student-main-page.component';
 
@@ -37,23 +37,23 @@ import { StudentMainPageComponent} from './student-main-page/student-main-page.c
   declarations: [
     AppComponent,
 
-    NavBarComponent,
-    CourseCardComponent,
-    CardLayoutComponent,
+    ProfessorNavBarComponent,
+    ProfessorCourseCardComponent,
+    ProfessorCardLayoutComponent,
     ProfessorSettingsPageComponent,
-    UserMenuComponent,
+    ProfessorUserMenuComponent,
     ProfessorMainPageComponent,
-    CourseExpansionPanelComponent,
+    ProfessorCourseExpansionPanelComponent,
     ProfessorMessagesPageComponent,
     MessagesTabComponent,
     AbsentMessageComponent,
     ExamMessageComponent,
     ProfessorCourseViewPageComponent,
-    CourseCardViewProfComponent,
+    ProfessorCourseCardViewComponent,
     ButtonCodeGeneratorComponent,
     ButtonProfSaveAttendanceComponent,
-    StudentCardComponent,
-    StudentListComponent,
+    ProfessorStudentCardComponent,
+    ProfessorStudentListComponent,
     LoginComponent,
     StudentMainPageComponent,
 

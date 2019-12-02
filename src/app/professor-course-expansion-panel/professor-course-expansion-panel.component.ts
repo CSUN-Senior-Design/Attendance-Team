@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-course-expansion-panel',
-  templateUrl: './course-expansion-panel.component.html',
-  styleUrls: ['./course-expansion-panel.component.css']
+  selector: 'app-professor-course-expansion-panel',
+  templateUrl: './professor-course-expansion-panel.component.html',
+  styleUrls: ['./professor-course-expansion-panel.component.css']
 })
-export class CourseExpansionPanelComponent implements OnInit {
+export class ProfessorCourseExpansionPanelComponent implements OnInit {
   @Input('tempName') name: string;
   @Input('tempSecNum') sectionNumber: number;
 
