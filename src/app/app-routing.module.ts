@@ -7,6 +7,8 @@ import { ProfessorMessagesPageComponent } from './professor-messages-page/profes
 import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
 import { LoginComponent } from './login/login.component';
 import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
+import { StudentSettingsPageComponent } from './student-settings-page/student-settings-page.component';
+import { StudentMessagesPageComponent } from './student-messages-page/student-messages-page.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path: 'profMessages', component: ProfessorMessagesPageComponent},
   {path: 'profCourse', component:  ProfessorCourseViewPageComponent},
   {path: 'studMain', component: StudentMainPageComponent},
+  {path: 'studSettings', component: StudentSettingsPageComponent},
+  {path: 'studMessages', component: StudentMessagesPageComponent},
 ];
 
 @NgModule({

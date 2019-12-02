@@ -30,7 +30,14 @@ import { ButtonProfSaveAttendanceComponent } from './button-prof-save-attendance
 import { ProfessorStudentCardComponent } from './professor-student-card/professor-student-card.component';
 import { ProfessorStudentListComponent } from './professot-student-list/professor-student-list.component';
 import { LoginComponent } from './login/login.component';
-import { StudentMainPageComponent} from './student-main-page/student-main-page.component';
+import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
+import { StudentUserMenuComponent } from './student-user-menu/student-user-menu.component';
+import { StudentSettingsPageComponent } from './student-settings-page/student-settings-page.component';
+import { StudentNavBarComponent } from './student-nav-bar/student-nav-bar.component';
+import { StudentMessagesPageComponent } from './student-messages-page/student-messages-page.component';
+import { StudentCourseExpansionPanelComponent } from './student-course-expansion-panel/student-course-expansion-panel.component';
+import { StudentCourseCardComponent } from './student-course-card/student-course-card.component';
+import { StudentCardLayoutComponent } from './student-card-layout/student-card-layout.component';
 
 
 @NgModule({
@@ -56,6 +63,13 @@ import { StudentMainPageComponent} from './student-main-page/student-main-page.c
     ProfessorStudentListComponent,
     LoginComponent,
     StudentMainPageComponent,
+    StudentCardLayoutComponent,
+    StudentCourseCardComponent,
+    StudentCourseExpansionPanelComponent,
+    StudentMessagesPageComponent,
+    StudentNavBarComponent,
+    StudentSettingsPageComponent,
+    StudentUserMenuComponent,
 
   ],
   imports: [
