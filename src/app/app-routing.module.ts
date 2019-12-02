@@ -5,6 +5,7 @@ import { ProfessorMainPageComponent } from './professor-main-page/professor-main
 import { ProfessorSettingsPageComponent } from './professor-settings-page/professor-settings-page.component';
 import { ProfessorMessagesPageComponent } from './professor-messages-page/professor-messages-page.component';
 import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
