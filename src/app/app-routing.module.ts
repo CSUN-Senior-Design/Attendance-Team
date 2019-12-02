@@ -6,13 +6,15 @@ import { ProfessorSettingsPageComponent } from './professor-settings-page/profes
 import { ProfessorMessagesPageComponent } from './professor-messages-page/professor-messages-page.component';
 import { ProfessorCourseViewPageComponent } from './professor-course-view-page/professor-course-view-page.component';
 import { LoginComponent } from './login/login.component';
+import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'profMain', component: ProfessorMainPageComponent},
   {path: 'profSettings', component: ProfessorSettingsPageComponent},
   {path: 'profMessages', component: ProfessorMessagesPageComponent},
-  {path: 'profCourse', component:  ProfessorCourseViewPageComponent}
+  {path: 'profCourse', component:  ProfessorCourseViewPageComponent},
+  {path: 'studMain', component: StudentMainPageComponent},
 ];
 
 @NgModule({

@@ -30,6 +30,7 @@ import { ButtonProfSaveAttendanceComponent } from './button-prof-save-attendance
 import { StudentCardComponent } from './student-card/student-card.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { LoginComponent } from './login/login.component';
+import { StudentMainPageComponent} from './student-main-page/student-main-page.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { LoginComponent } from './login/login.component';
     StudentCardComponent,
     StudentListComponent,
     LoginComponent,
+    StudentMainPageComponent,
 
   ],
   imports: [
