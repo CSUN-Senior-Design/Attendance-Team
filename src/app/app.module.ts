@@ -13,7 +13,7 @@ import { ProfessorUserMenuComponent } from './professor-user-menu/professor-user
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
-  MatGridListModule, MatToolbarModule, MatTabsModule, MatChipsModule
+  MatGridListModule, MatToolbarModule, MatTabsModule, MatChipsModule, MatInputModule
 } from '@angular/material';
 
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
@@ -38,6 +38,9 @@ import { StudentMessagesPageComponent } from './student-messages-page/student-me
 import { StudentCourseExpansionPanelComponent } from './student-course-expansion-panel/student-course-expansion-panel.component';
 import { StudentCourseCardComponent } from './student-course-card/student-course-card.component';
 import { StudentCardLayoutComponent } from './student-card-layout/student-card-layout.component';
+import { StudentCourseViewPageComponent } from './student-course-view-page/student-course-view-page.component';
+import { StudentCourseViewCardComponent } from './student-course-view-card/student-course-view-card.component';
+import { StudentConfirmAttendanceDialogComponent } from './student-confirm-attendance-dialog/student-confirm-attendance-dialog.component';
 
 
 @NgModule({
@@ -70,6 +73,9 @@ import { StudentCardLayoutComponent } from './student-card-layout/student-card-l
     StudentNavBarComponent,
     StudentSettingsPageComponent,
     StudentUserMenuComponent,
+    StudentCourseViewPageComponent,
+    StudentCourseViewCardComponent,
+    StudentConfirmAttendanceDialogComponent,
 
   ],
   imports: [
@@ -90,7 +96,8 @@ import { StudentCardLayoutComponent } from './student-card-layout/student-card-l
     MatIconModule,
     MatDividerModule,
     MatGridListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

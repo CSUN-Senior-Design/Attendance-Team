@@ -1,3 +1,4 @@
+import { StudentCourseViewPageComponent } from './student-course-view-page/student-course-view-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'studMain', component: StudentMainPageComponent},
   {path: 'studSettings', component: StudentSettingsPageComponent},
   {path: 'studMessages', component: StudentMessagesPageComponent},
+  {path: 'studCourse', component:StudentCourseViewPageComponent}
 ];
 
 @NgModule({
