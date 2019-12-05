@@ -1,0 +1,44 @@
+mat-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-left: 2px solid var(--csun-red);   
+}
+p{
+    line-height: 10%;
+}
+p.bold{
+    font-weight: 700;
+    font-size: large;
+}
+.attendance{
+    margin-left: 80%;
+    border-left: 4px solid var(--csun-red);
+    border-radius: 20px; 
+    background-color: #BEC6C3;
+    
+}
+.attendancetxt{
+    font-size: 25px;
+    font: bold;
+    padding: 5px;
+}
+example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+ 
+  input {
+    border-radius: 5px;
+    border-block-color: solid var(--csun-red);;
+  }
+  
+  mat-form-field{
+      border-block-width: 20px;
+  }
