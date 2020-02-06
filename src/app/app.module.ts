@@ -41,6 +41,7 @@ import { StudentCardLayoutComponent } from './student-card-layout/student-card-l
 import { StudentCourseViewPageComponent } from './student-course-view-page/student-course-view-page.component';
 import { StudentCourseViewCardComponent } from './student-course-view-card/student-course-view-card.component';
 import { StudentConfirmAttendanceDialogComponent } from './student-confirm-attendance-dialog/student-confirm-attendance-dialog.component';
+import {TestingDataService } from './services/testing-data.service';
 
 
 @NgModule({
@@ -99,7 +100,9 @@ import { StudentConfirmAttendanceDialogComponent } from './student-confirm-atten
     MatChipsModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [
+    TestingDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

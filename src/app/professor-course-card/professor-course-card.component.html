@@ -1,32 +1,27 @@
 <mat-card>
-        <mat-card-title-group>
+        <mat-card-title-group titleGroup>
                 <img mat-card-sm-image src="../assets/notebook.png">
-                <mat-card-title>{{course.name}}</mat-card-title>
+                <mat-card-title>
+                  {{course.code}} &mdash; {{course.name}}
+                </mat-card-title>
                 <mat-card-subtitle>
+                        <p style= "color: #000000">{{getCourseDays(course)}}: {{getCourseTimes(course)}}</p>
                         <p>Section #{{course.section}}</p>
-                        <p>{{getDays()}}: {{getTimes()}}</p>
                 </mat-card-subtitle>
         </mat-card-title-group>
-        <mat-card-content>
-                <div>
-                        <p class="bold">Comp. Systems Security:</p>
-                        <p>{{course.professor}}</p>
-                </div>
-                <div>
-                        <mat-card-actions align="end">
-                                <button mat-raised-button
-                                        class="csunRed"
-                                        routerLink="/profCourse">
-                                        <mat-label for="viewCourse">View Course</mat-label>
-                                        <mat-icon id="viewCourse" class="buttonIcon">info</mat-icon>
-                                </button>
-                                <button mat-raised-button
-                                        class="goldenYellow"
-                                        routerLink="/profMessages">
-                                        <mat-label for="viewMessages">Messages</mat-label>
-                                        <mat-icon id="viewMessages" class="buttonIcon">mail_outline</mat-icon>
-                                </button>
-                        </mat-card-actions>
-                </div>
+        <mat-card-content content>
+                        <p class="bold">Comp. Systems Security.</p>
+                        <p class="light">{{course.professor}}</p>
         </mat-card-content>
+        <mat-divider [inset]="true"></mat-divider>
+        <mat-card-actions actions align="end">
+            <button mat-raised-button class="csunRed" routerLink="/profCourse">
+                    <mat-label for="viewCourse">View Course</mat-label>
+                    <mat-icon id="viewCourse" class="buttonIcon">info</mat-icon>
+            </button>
+            <button mat-raised-button class="goldenYellow" routerLink="/profMessages">
+                          <mat-label for="viewMessages">Messages</mat-label>
+                          <mat-icon id="viewMessages" class="buttonIcon">mail_outline</mat-icon>
+            </button>
+        </mat-card-actions>
 </mat-card>
