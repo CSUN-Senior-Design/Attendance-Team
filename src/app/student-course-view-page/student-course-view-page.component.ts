@@ -9,6 +9,9 @@ export class StudentCourseViewPageComponent implements OnInit {
 
   constructor() { }
 
+  onClick(message: string){
+    window.open('mailto:ncod@csun.edu?subject=' + message + ' service change');
+  }
   ngOnInit() {
   }
 

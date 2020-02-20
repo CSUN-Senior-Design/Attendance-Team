@@ -1,2 +1,23 @@
 <app-student-nav-bar name="Student Page"></app-student-nav-bar>
 <app-student-course-view-card></app-student-course-view-card>
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header class="expansionPanelHeader">
+            <mat-panel-title>Messages</mat-panel-title>
+            <mat-panel-description>See messages.</mat-panel-description>
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <mat-card>
+        <mat-card-title>
+            NCOD Services
+        </mat-card-title>
+        <mat-card-subtitle>
+            Request, Cancel, or Modify NCOD Services
+        </mat-card-subtitle>
+        <mat-card-actions>
+            <button mat-button (click)="onClick('ASL')" class="csunRed"><mat-label>ASL</mat-label></button>
+            <button mat-button (click)="onClick('Cart')" class="csunRed">Cart</button>
+            <button mat-button (click)="onClick('Note Taker')" class="csunRed">Note Taker</button>
+    </mat-card-actions>
+    </mat-card>
+</mat-accordion>
