@@ -53,3 +53,6 @@ Removed various redundant components.
     font-family: futura-pt-bold, sans-serif;
     font-weight: 700;
     font-style: italic;
+
+#### Reading JSON Properties
+    `console.log(default_messages["default-messages"][1]["student"]["ncod"][0]["asl"]["subject"]);`

@@ -1,0 +1,36 @@
+{
+    "default-messages": [
+        {
+            "professor": {
+                "exam": "Exam alert.",
+                "quiz": "Quiz alert.",
+                "absent": "Absent alert.",
+                "tardy": "Tardy alert."
+            }
+        },
+        {
+            "student": {
+                "ncod": [
+                    {
+                        "asl": {
+                            "subject": "ASL service change",
+                            "body": "Default message goes here."
+                        }
+                    },
+                    {
+                        "cart": {
+                            "subject": "Cart service change",
+                            "body": "Default message goes here."
+                        }
+                    },
+                    {
+                        "note-taker": {
+                            "subject": "Note taker service change",
+                            "body": "Default message goes here."
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
