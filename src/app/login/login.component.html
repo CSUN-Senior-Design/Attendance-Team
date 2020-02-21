@@ -1,14 +1,43 @@
-
 <div>
-  <button mat-raised-button class="csunRed" routerLink="/profMain">
-    <mat-label for="proffesorPage">Proffesor Page</mat-label>
-  </button>
+  <mat-card>
+    <mat-card-title>
+      Attendance App Log In
+      <button mat-flat-button class="menuButton" title="Jump to..." [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-card-title>
+    <mat-card-subtitle>Log in using your canvas information</mat-card-subtitle>
+    <mat-card-content>
+      <form>
+        <div>
+          <mat-form-field>
+            <mat-label for="username">Username</mat-label>
+            <input matInput id="username" placeholder="neverabsent@earthlink.net" required>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label for="password">Password</mat-label>
+            <input matInput id="password" placeholder="password1" required>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button class="csunRed">
+        <mat-label>Log In</mat-label>
+        <mat-icon class="buttonIcon">check_circle</mat-icon>
+      </button>
+      <button mat-raised-button class="goldenYellow" (click)="onClick()">
+        <mat-label>Assistance</mat-label>
+        <mat-icon class="buttonIcon">help</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
 
-  <button mat-raised-button class="csunRed" routerLink="/studMain">
-    <mat-label for="studentPage">Student Page</mat-label>
-  </button>
-
-  <button mat-raised-button class="csunRed" routerLink="/profMain">
-    <mat-label for="ncodPage">NCOD Page</mat-label>
-  </button>
+<div class="developerMenu">
+  <mat-menu #menu="matMenu" class="menu">
+    <app-developer-menu></app-developer-menu>
+  </mat-menu>
 </div>

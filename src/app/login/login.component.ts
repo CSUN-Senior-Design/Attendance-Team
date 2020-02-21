@@ -9,6 +9,9 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  onClick(){
+    window.open('https://www.csun.edu/it/user-id-and-password');
+  }
   ngOnInit() {
   }
 

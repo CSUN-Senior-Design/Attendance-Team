@@ -44,6 +44,7 @@ import { StudentConfirmAttendanceDialogComponent } from './student-confirm-atten
 import {TestingDataService } from './services/testing-data.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserMenuComponent } from './user-menu/user-menu.component';
+import { DeveloperMenuComponent } from './developer-menu/developer-menu.component';
 
 
 @NgModule({
@@ -80,6 +81,7 @@ import { UserMenuComponent } from './user-menu/user-menu.component';
     StudentCourseViewCardComponent,
     StudentConfirmAttendanceDialogComponent,
     UserMenuComponent,
+    DeveloperMenuComponent,
   ],
   imports: [
     BrowserModule,
