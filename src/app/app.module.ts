@@ -42,12 +42,14 @@ import { StudentCourseViewPageComponent } from './student-course-view-page/stude
 import { StudentCourseViewCardComponent } from './student-course-view-card/student-course-view-card.component';
 import { StudentConfirmAttendanceDialogComponent } from './student-confirm-attendance-dialog/student-confirm-attendance-dialog.component';
 import {TestingDataService } from './services/testing-data.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { UserMenuComponent } from './user-menu/user-menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    NavbarComponent,
     ProfessorNavBarComponent,
     ProfessorCourseCardComponent,
     ProfessorCardLayoutComponent,
@@ -77,7 +79,7 @@ import {TestingDataService } from './services/testing-data.service';
     StudentCourseViewPageComponent,
     StudentCourseViewCardComponent,
     StudentConfirmAttendanceDialogComponent,
-
+    UserMenuComponent,
   ],
   imports: [
     BrowserModule,
