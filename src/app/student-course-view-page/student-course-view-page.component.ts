@@ -10,17 +10,16 @@ export class StudentCourseViewPageComponent implements OnInit {
   constructor() { }
 
   onClick(service: number){
-    var message_subject = default_messages["default-messages"][1].student.ncod[service].asl.subject;
-    var message_body = default_messages["default-messages"][1].student.ncod[service].asl.body;
-    window.open('mailto:ncod@csun.edu?subject=' + message_subject +'&body=' + message_body);
+    var serviceType = (
+      service == 0 ? default_messages["ncod-messages"].asl : 
+      default_messages["ncod-messages"]["cart-typewell"]
+    );
+    window.open(
+      'mailto:ncod@csun.edu?subject=' + serviceType.subject +'&body=' + serviceType.body
+      );
   }
   ngOnInit() {
     
   }
 
 }
-
-// Service:
-//     0 - ASL
-//     1 - Cart
-//     2 - Note taker
