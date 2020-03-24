@@ -32,7 +32,6 @@ import { ProfessorStudentListComponent } from './professot-student-list/professo
 import { LoginComponent } from './login/login.component';
 import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
 import { StudentUserMenuComponent } from './student-user-menu/student-user-menu.component';
-import { StudentSettingsPageComponent } from './student-settings-page/student-settings-page.component';
 import { StudentNavBarComponent } from './student-nav-bar/student-nav-bar.component';
 import { StudentMessagesPageComponent } from './student-messages-page/student-messages-page.component';
 import { StudentCourseExpansionPanelComponent } from './student-course-expansion-panel/student-course-expansion-panel.component';
@@ -75,7 +74,6 @@ import { DeveloperMenuComponent } from './developer-menu/developer-menu.componen
     StudentCourseExpansionPanelComponent,
     StudentMessagesPageComponent,
     StudentNavBarComponent,
-    StudentSettingsPageComponent,
     StudentUserMenuComponent,
     StudentCourseViewPageComponent,
     StudentCourseViewCardComponent,

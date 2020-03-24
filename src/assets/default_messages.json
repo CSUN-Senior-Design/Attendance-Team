@@ -8,11 +8,11 @@
     "ncod-messages": {
         "asl": {
             "subject": "ASL service change",
-            "body": "Default message goes here."
+            "body": "Write your message here."
         },
         "cart-typewell": {
             "subject": "CART/Typewell service change",
-            "body": "Default message goes here."
+            "body": "Write your message here."
         }
     }
 }
