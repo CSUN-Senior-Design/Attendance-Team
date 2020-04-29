@@ -24,7 +24,13 @@
       </form>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button class="csunRed">
+      <button mat-raised-button   class="btn googleBtn" (click)="authService.GoogleAuth()">
+        <i class="fab fa-google-plus-g"  style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;"></i>
+        <mat-label>Sign up</mat-label>
+        <mat-icon class="buttonIcon">check_circle</mat-icon>
+      </button>
+      <button mat-raised-button   class="btn googleBtn" (click)="authService.SignIn(userName.value, userPassword.value)">
+        <i class="fab fa-google-plus-g"  style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;"></i>
         <mat-label>Log In</mat-label>
         <mat-icon class="buttonIcon">check_circle</mat-icon>
       </button>

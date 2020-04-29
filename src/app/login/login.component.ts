@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
 
   onClick(){
     window.open('https://www.csun.edu/it/user-id-and-password');
   }
   ngOnInit() {
   }
+  
 
 }
 

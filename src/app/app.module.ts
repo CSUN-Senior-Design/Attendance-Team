@@ -45,6 +45,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserMenuComponent } from './user-menu/user-menu.component';
 import { DeveloperMenuComponent } from './developer-menu/developer-menu.component';
 
+//firebase
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { AuthService } from './services/auth.service';
+
+
 
 @NgModule({
   declarations: [
@@ -100,10 +108,15 @@ import { DeveloperMenuComponent } from './developer-menu/developer-menu.componen
     MatDividerModule,
     MatGridListModule,
     MatChipsModule,
-    MatInputModule
+    MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
+    AngularFireAuthModule,
+    AppRoutingModule, 
+    AngularFirestoreModule,
   ],
   providers: [
-    TestingDataService
+    TestingDataService,
+    [AuthService],
   ],
   bootstrap: [AppComponent]
 })
