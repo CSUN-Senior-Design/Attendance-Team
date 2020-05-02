@@ -1,3 +1,4 @@
+import { StudentSignUpComponent } from './student-sign-up/student-sign-up.component';
 import { StudentCourseViewPageComponent } from './student-course-view-page/student-course-view-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
 import { StudentMessagesPageComponent } from './student-messages-page/student-messages-page.component';
 
+
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'profMain', component: ProfessorMainPageComponent},
@@ -18,7 +20,8 @@ const routes: Routes = [
   {path: 'profCourse', component:  ProfessorCourseViewPageComponent},
   {path: 'studMain', component: StudentMainPageComponent},
   {path: 'studMessages', component: StudentMessagesPageComponent},
-  {path: 'studCourse', component:StudentCourseViewPageComponent}
+  {path: 'studCourse', component:StudentCourseViewPageComponent},
+  {path: 'studentSignUp',component:StudentSignUpComponent}
 ];
 
 @NgModule({

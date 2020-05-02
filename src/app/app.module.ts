@@ -1,3 +1,4 @@
+import { CrudService } from './shared/crud.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -51,7 +52,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { AuthService } from './services/auth.service';
-
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { StudentSignUpComponent } from './student-sign-up/student-sign-up.component';
 
 
 @NgModule({
@@ -88,6 +90,9 @@ import { AuthService } from './services/auth.service';
     StudentConfirmAttendanceDialogComponent,
     UserMenuComponent,
     DeveloperMenuComponent,
+    VerifyEmailComponent,
+    StudentSignUpComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -117,6 +122,7 @@ import { AuthService } from './services/auth.service';
   providers: [
     TestingDataService,
     [AuthService],
+    CrudService
   ],
   bootstrap: [AppComponent]
 })

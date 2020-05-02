@@ -1,7 +1,9 @@
 export interface Student {
-    syudentId: string;
-   email: string;
-   first_name: string;
-   last_name: string;
-   emailVerified: boolean;
+    //uid: string;
+    studentId: string;
+    email: string;
+    name: string;
+    //emailVerified: boolean;
+    NCOD: boolean;
+    photoURL: string
 }

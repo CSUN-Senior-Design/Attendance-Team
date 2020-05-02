@@ -1,0 +1,68 @@
+<div >
+  <mat-card style="color: rgb(207, 218, 228);">
+    <mat-card-title style= "color: #FFFFFF; margin: 10px;">
+      Sign up
+    </mat-card-title>
+    <mat-card-subtitle>
+      Sign up using your Canvas information.
+    </mat-card-subtitle>
+
+    <form>
+      <div>
+        <mat-form-field>
+          <mat-label for="first_name">First Name</mat-label>
+          <input matInput id="first_name" placeholder="" type="username" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label for="last_name">Last Name</mat-label>
+          <input matInput id="last_name" placeholder="" type="username" required>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label for="studentID">Student ID</mat-label>
+          <input matInput id="studentID" placeholder="123456789" type="number" required>
+        </mat-form-field>
+      </div>
+      
+      <div>
+        <mat-form-field>
+          <mat-label for="csun_email">CSUN Email</mat-label>
+          <input matInput id="csun_email" placeholder="neverabsent@my.csun.edu" type="email" required>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label for="password">Password</mat-label>
+          <input matInput id="password" placeholder="password1" type="password" required>
+        </mat-form-field>
+      </div>
+
+      <mat-card-actions>
+        <button mat-raised-button  class="csunRed"  
+        (click)="authService.SignUp(first_name.value,
+         last_name.value, studentID.value, csun_email.value, password.value)">
+          <i style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;"></i>
+          <mat-label>Sign up</mat-label>
+          <mat-icon class="buttonIcon">check_circle</mat-icon>
+        </button>
+
+        <span class="or"><span class="orInner">   Or </span></span>
+
+        <button mat-raised-button class="csunRed" (click)="authService.GoogleAuth()">
+          <i  style="margin:5px; background-color: var(--csun-red); color: #FFFFFF;"></i>
+          <mat-label>Google Sign Up</mat-label>
+          <mat-icon class="buttonIcon">check_circle</mat-icon>
+        </button>
+    </mat-card-actions>
+  
+      <div class="redirectToLogin">
+        <span>Already have an account? </span><span class="redirect" routerLink="/login">Log In</span>
+      </div>
+    </form>
+  </mat-card>
+</div>

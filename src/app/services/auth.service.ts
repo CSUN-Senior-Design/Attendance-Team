@@ -1,9 +1,11 @@
+//import { Student } from './../student.model';
 import { Injectable, NgZone } from '@angular/core';
-import { User } from './../shared/services/user';
+//import { Student } from './../shared/services/student';
 import { auth } from 'firebase/app';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
+import { Student } from '../shared/services/student';
 //import { AngularFireAuth } from 'angularfire2/auth';
 
 @Injectable({
@@ -41,20 +43,21 @@ export class AuthService {
         this.ngZone.run(() => {
           this.router.navigate(['studMain']);
         });
-        this.SetUserData(result.user);
+        this.SetUserData(result);
       }).catch((error) => {
         window.alert(error.message)
       })
   }
 
   // Sign up with email/password
-  SignUp(email, password) {
+  SignUp(first_name, last_name, studentID, email, password) {
+
     return this.afAuth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
         /* Call the SendVerificaitonMail() function when new user sign 
         up and returns promise */
         this.SendVerificationMail();
-        this.SetUserData(result.user);
+        this.SetUserData(result);
       }).catch((error) => {
         window.alert(error.message)
       })
@@ -96,7 +99,7 @@ export class AuthService {
        this.ngZone.run(() => {
           this.router.navigate(['studMain']);
         })
-      this.SetUserData(result.user);
+      this.SetUserData(result);
     }).catch((error) => {
       window.alert(error)
     })
@@ -105,14 +108,33 @@ export class AuthService {
   /* Setting up user data when sign in with username/password, 
   sign up with username/password and sign in with social auth  
   provider in Firestore database using AngularFirestore + AngularFirestoreDocument service */
-  SetUserData(user) {
-    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
-    const userData: User = {
-      uid: user.uid,
+  SetUserDataForSignUp(user) {
+    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`Student/${user.uid}`);
+    const userData: Student = {
+      //uid: user.uid,
+      studentId: user.studentID,
       email: user.email,
-      displayName: user.displayName,
+      name: user.displayName,
+      //emailVerified: user.emailVerified,
       photoURL: user.photoURL,
-      emailVerified: user.emailVerified
+      NCOD: false
+    }
+    return userRef.set(userData, {
+      merge: true
+    })
+  }
+
+
+  SetUserData(user) {
+    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`Student/${user.uid}`);
+    const userData: Student = {
+      //uid: user.uid,
+      studentId: "200123456",
+      email: user.email,
+      name: user.displayName,
+      photoURL: user.photoURL,
+      //emailVerified: user.emailVerified,
+      NCOD: false
     }
     return userRef.set(userData, {
       merge: true

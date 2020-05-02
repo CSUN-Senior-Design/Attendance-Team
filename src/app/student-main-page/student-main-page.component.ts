@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { Student } from './../models/student.model';
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../models/course.model';

@@ -2,7 +2,7 @@
   <mat-icon class="material-icons blackIcon">settings_application</mat-icon>
   <mat-label for="settingsButton">Settings</mat-label>
 </button>
-<button mat-menu-item id="logoutButton" routerLink="/">
+<button mat-menu-item id="logoutButton" (click)="authService.SignOut()">
   <mat-icon class="material-icons blackIcon">exit_to_app</mat-icon>
   <mat-label for="logoutButton">Log Out</mat-label>
 </button>
