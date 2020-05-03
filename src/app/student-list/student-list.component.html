@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Are you NCOD?</th>
+    <th>Course</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+
+      <td>{{student.name}}</td>
+      <td>{{student.emailID}}</td>
+      <td>{{student.ncod}}</td>
+      <td>{{student.course}}</td>
+      <td>
+        <button (click)="delete(student.name)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
