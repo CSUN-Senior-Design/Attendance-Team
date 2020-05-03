@@ -54,6 +54,7 @@ import { environment } from '../environments/environment';
 import { AuthService } from './services/auth.service';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { StudentSignUpComponent } from './student-sign-up/student-sign-up.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 
 @NgModule({
@@ -92,6 +93,7 @@ import { StudentSignUpComponent } from './student-sign-up/student-sign-up.compon
     DeveloperMenuComponent,
     VerifyEmailComponent,
     StudentSignUpComponent,
+    StudentListComponent,
   
   ],
   imports: [
