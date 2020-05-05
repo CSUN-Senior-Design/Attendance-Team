@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../models/course.model';
 import { TestingDataService } from '../services/testing-data.service';
@@ -13,7 +14,9 @@ export class StudentMainPageComponent implements OnInit {
   pageTitle = "Courses";
   course: Course;
 
-  constructor(private testingService: TestingDataService,
+  constructor(
+    private authService: AuthService,
+    private testingService: TestingDataService,
     private navbarTitleService: NavbarTitleService) {
     this.course = this.testingService.getSampleCourse();
   }

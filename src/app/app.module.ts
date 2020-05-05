@@ -13,7 +13,7 @@ import { ProfessorUserMenuComponent } from './professor-user-menu/professor-user
 import {
   MatMenuModule, MatButtonModule, MatCardModule, MatCheckboxModule, MatExpansionModule,
   MatSlideToggleModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatDividerModule,
-  MatGridListModule, MatToolbarModule, MatTabsModule, MatChipsModule, MatInputModule
+  MatGridListModule, MatToolbarModule, MatTabsModule, MatChipsModule, MatInputModule, MatRadioModule
 } from '@angular/material';
 
 import { ProfessorMainPageComponent } from './professor-main-page/professor-main-page.component';
@@ -45,6 +45,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserMenuComponent } from './user-menu/user-menu.component';
 import { DeveloperMenuComponent } from './developer-menu/developer-menu.component';
 
+// Firebase services + enviorment module
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { AuthService } from "./services/auth.service";
+import { StudentSignUpComponent } from './student-sign-up/student-sign-up.component';
+import { StudentInfoCardComponent } from './student-info-card/student-info-card.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +88,9 @@ import { DeveloperMenuComponent } from './developer-menu/developer-menu.componen
     StudentConfirmAttendanceDialogComponent,
     UserMenuComponent,
     DeveloperMenuComponent,
+    StudentSignUpComponent,
+    StudentInfoCardComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -90,6 +101,7 @@ import { DeveloperMenuComponent } from './developer-menu/developer-menu.componen
     MatTabsModule,
     MatButtonModule,
     MatCardModule,
+    MatRadioModule,
     MatCheckboxModule,
     MatExpansionModule,
     MatSlideToggleModule,
@@ -100,11 +112,19 @@ import { DeveloperMenuComponent } from './developer-menu/developer-menu.componen
     MatDividerModule,
     MatGridListModule,
     MatChipsModule,
-    MatInputModule
+    MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    
   ],
   providers: [
-    TestingDataService
+    TestingDataService,
+    AuthService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+   
+  ]
 })
 export class AppModule { }

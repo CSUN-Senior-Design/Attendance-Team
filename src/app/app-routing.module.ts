@@ -9,6 +9,7 @@ import { ProfessorCourseViewPageComponent } from './professor-course-view-page/p
 import { LoginComponent } from './login/login.component';
 import { StudentMainPageComponent } from './student-main-page/student-main-page.component';
 import { StudentMessagesPageComponent } from './student-messages-page/student-messages-page.component';
+import { StudentSignUpComponent } from './student-sign-up/student-sign-up.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'profCourse', component:  ProfessorCourseViewPageComponent},
   {path: 'studMain', component: StudentMainPageComponent},
   {path: 'studMessages', component: StudentMessagesPageComponent},
-  {path: 'studCourse', component:StudentCourseViewPageComponent}
+  {path: 'studCourse', component:StudentCourseViewPageComponent},
+  {path: 'studentSignUp',component:StudentSignUpComponent}
 ];
 
 @NgModule({

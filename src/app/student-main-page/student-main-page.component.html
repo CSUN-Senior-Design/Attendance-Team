@@ -1,5 +1,20 @@
 <app-student-nav-bar name="Student Main"></app-student-nav-bar>
 <div>
+  <mat-card *ngIf="authService.userData as user">
+
+    <mat-card-content content class="studentInfo">
+      <img media="(max-width: 40px)" class="align-self-start resize img-thumbnail rounded-circle" src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
+      alt="{{user.name}}">
+    </mat-card-content>
+    <mat-card-content>
+      <p><span class="tab"></span><strong>   {{user.email}}</strong></p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+<div>
+  
   <app-student-course-card [course]="course"></app-student-course-card>
   <app-student-course-card [course]="course"></app-student-course-card>
   <app-student-course-card [course]="course"></app-student-course-card>

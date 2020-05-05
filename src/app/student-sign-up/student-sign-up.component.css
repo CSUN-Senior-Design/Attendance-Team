@@ -1,0 +1,33 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuButton {
+    /* margin: auto; */
+    background: none;
+    border: 0;
+    width: min-content;
+    color: black;
+}
+.fullWidth{
+    width: inherit;
+}
+.tp-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+ }
+ .tp-radio-button {
+    margin: 5px;
+ }
+ .tp-selected-value {
+    margin: 15px 0;
+ }
+ .tab {
+    display: inline-block;
+    margin-left: 20px;
+}
+.tab2 {
+    display: inline-block;
+    margin-left: 10px;
+}

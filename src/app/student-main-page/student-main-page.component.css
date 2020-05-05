@@ -1,0 +1,18 @@
+.resize {
+    width: 150px;
+    height: auto;
+}
+
+.resize {
+    width: 150px;
+    height: auto;
+}
+mat-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab {
+    tab-size: 20px;
+}
+
